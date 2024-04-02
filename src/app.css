@@ -1,4 +1,4 @@
-.box1 {
-    background-color: #ccc;
+.box {
+  position: relative;
+  height: 100vh;
   }
-  
