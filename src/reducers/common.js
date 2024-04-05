@@ -1,4 +1,4 @@
-import { UPDATE_TEMPLATE_FIlES } from '@app/build/actions/common';
+import { UPDATE_TEMPLATE_FIlES } from '../actions/common.js';
 
 const INIT_STATE = {
     // 文件导入模板

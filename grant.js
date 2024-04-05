@@ -81,7 +81,7 @@ function init() {
     });
     // 在写入配置信息内容
     fileText += `exports.routeConfig = ${JSON.stringify(confText).replace(/"#/g, '').replace(/#"/g, '')};\r\n`;
-    fs.writeFile('./app/build/route_init.js', fileText, 'utf8', () => {
+    fs.writeFile('./src/route_init.js', fileText, 'utf8', () => {
         console.log('自动生成路由信息成功');
     });
 }

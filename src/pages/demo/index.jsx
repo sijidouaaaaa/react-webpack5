@@ -134,11 +134,14 @@ class Test extends Component {
     }
     render() {
         const { showText, selectRoute } = this.state;
+        console.log('getRouteConfig',getRouteConfig());
         // 解析所有的结果内容保障其展示数据
         const rConfig = getRouteConfig();
+        console.log('getRouteConfig1111111111111111111111',rConfig);
         const height = document.body.clientHeight - 170;
         // 获取下来选择的路由切换
         const selectGroups = getRouteSelect(rConfig);
+        console.log('selectGroups222222222222222222222222222',selectGroups);
         // 获取选择的路由信息
         const renderStore = getRouteLink(rConfig[selectRoute]);
         const selectGroupsArry = Object.keys(selectGroups);

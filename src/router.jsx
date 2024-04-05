@@ -1,7 +1,8 @@
 //加载依赖
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Routes, Route, } from 'react-router';
+import { BrowserRouter } from 'react-router-dom'
 
 // antd 5.x使用 国际化 
 import zh_CN from 'antd/locale/zh_CN';
@@ -31,6 +32,7 @@ const layoutEnum = {
  * @param {boolean} end 
  */
 function loadPage(end) {
+    console.log("测试")
     if (end) {
         store.dispatch(modalUpdate({
             loadingPage: false
@@ -65,27 +67,27 @@ function getRouteView(route, childRender) {
     // 获取参数信息，判断是否符合自定义compent
     const hasCompent = !route.render;
     if (hasCompent) {
-        return (<Route key={route.key} path={route.location} component={route.component}>
+        return (<Route key={route.key} path={route.location} element={route.element}>
             {
-                hasNext ?  childRender(route.children) : ''
+                hasNext ? childRender(route.children) : ''
             }
         </Route>);
     }
     // 检查当前的layout设置
-    let component;
+    let element;
     if (route.layout) {
-        component = layoutEnum[route.layout];
+        element = layoutEnum[route.layout];
     }
-    return (<Route 
-        key={route.key} 
-        component={component}  
-        path={route.location} 
+    return (<Route
+        key={route.key}
+        element={element}
+        path={route.location}
         getIndexRoute={(_state, callback) => {
             loadPage();
             route.render((p) => {
                 loadPage(true);
                 callback(null, {
-                    component: p.default
+                    element: p.default
                 });
             });
         }}>
@@ -100,32 +102,34 @@ export default (
         locale={zh_CN}
         componentSize='small' // antd 5.x使用
     >
-        {/* <StyleProvider  hashPriority="high"  transformers={[legacyLogicalPropertiesTransformer]}>
-        </StyleProvider> */}
+        {/* {<StyleProvider  hashPriority="high"  transformers={[legacyLogicalPropertiesTransformer]}>
+        </StyleProvider>} */}
         <Provider store={store}>
-            <Router history={history}>
-                <Route path="client" component={Layout}>
-                    <IndexRoute component={NotFound} />
-                    {
-                        Object.keys(routeConfig.client).map((r) => {
-                            const _rt = routeConfig.client[r];
-                            _rt.location = r;
-                            return getRouteRender(routeConfig.client[r]);
-                        })
-                    }
-                    <Route path="demo" getIndexRoute={(_state, callback) => {
-                        loadPage();
-                        require.ensure([], function (require) {
-                            let loadComponent = require('./pages/demo/index.jsx');
-                            loadPage(true);
-                            callback(null, {
-                                component: loadComponent.default
-                            });
-                        }, 'test-index');
-                    }} />
-                    <Route path="*" component={NotFound} />
-                </Route>
-            </Router>
+            <BrowserRouter>
+                    <Routes>
+                        <Route path="client" element={Layout}>
+                            <Route element={NotFound} />
+                            {
+                                Object.keys(routeConfig.client).map((r) => {
+                                    const _rt = routeConfig.client[r];
+                                    _rt.location = r;
+                                    return getRouteRender(routeConfig.client[r]);
+                                })
+                            }
+                            <Route path="demo" getIndexRoute={(_state, callback) => {
+                                loadPage();
+                                require.ensure([], function (require) {
+                                    let loadComponent = require('./pages/demo/index.jsx');
+                                    loadPage(true);
+                                    callback(null, {
+                                        element: loadComponent.default
+                                    });
+                                }, 'test-index');
+                            }} />
+                            <Route path="*" element={NotFound} />
+                        </Route>
+                    </Routes>
+            </BrowserRouter>
         </Provider>
     </ConfigProvider>
 );

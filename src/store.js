@@ -1,10 +1,13 @@
 import { createStore, applyMiddleware } from 'redux';
 
 import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
-import { browserHistory } from 'react-router';
-import thunk from 'redux-thunk';
+import { createBrowserHistory } from 'history'
+
+import { thunk } from 'redux-thunk';
 
 import reducer from './reducers/index.js';
+
+const browserHistory = createBrowserHistory();
 
 //载入redux debug插件
 function configureStore(initialState) {
@@ -34,5 +37,4 @@ else{
 // Sync dispatched route actions to the history
 const history = syncHistoryWithStore(browserHistory, store);
 
-exports.store = store;
-exports.history = history;
+export { store, history };

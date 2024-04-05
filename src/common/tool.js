@@ -1,21 +1,11 @@
 // 工具函数
 
+let diff = 0;
+
 export function setTimeDiff(curDate) {
     diff = new Date().getTime() - new Date(curDate).getTime();
 }
 
-/**
- * 获取当前路径地址
- * @param  {Object} routing 路由对象
- * @return {String}         路径地址
- */
-export function getCurPath(routing) {
-    let pathname = routing.location.pathname;
-    if (!/\/$/.test(pathname)) {
-        pathname += '/';
-    }
-    return pathname.replace(pathPrefix, '');
-}
 
 /**
  * 获取当前路由参数

@@ -4,8 +4,7 @@
 
 
 exports.getRouteConfig = function () {
-    return console.log('ddddddddddddddddddddddd',routeConfig);
-    // return routeConfig;
+    return routeConfig;
 };
 
 const routeConfig = {

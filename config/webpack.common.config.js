@@ -1,6 +1,7 @@
 // 公共配置文件
 const path = require('path');
 
+
 module.exports = {
     // 属性定义了入口文件路径，
     entry: {
@@ -24,7 +25,9 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 include: [
+                    /(src)/,
                     /(node_modules\/antd)/,
+                    /(node_modules)/,
                     /grant.js/
                 ],
                 exclude: /(node_modules|bower_components)/,

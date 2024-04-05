@@ -49,6 +49,7 @@ class LayoutPage extends Component {
 LayoutPage.propTypes = {
     modal: PropTypes.object.isRequired,
     children: PropTypes.object.isRequired,
+    dispatch: PropTypes.func.isRequired
 };
 
 export default connect(propMap)(LayoutPage);

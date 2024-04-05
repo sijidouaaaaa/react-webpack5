@@ -4,7 +4,6 @@
 import React, { Component } from 'react';
 import './assets/less/app.less';
 // import BJImage from '@/assets/images/R-C.jpg'
-import Button from 'antd/lib/button';
 import './App.css';
 import ListTable from './pages/list_table/index.jsx'
 

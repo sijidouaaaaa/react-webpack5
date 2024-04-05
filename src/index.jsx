@@ -18,7 +18,4 @@ setTimeDiff(document.getElementById('app').getAttribute('data-date'));
 const container = document.getElementById('app');
 const root = createRoot(container);
 
-function App () {
-    return (AppRouter);
-}
-root.render(App);
+root.render(AppRouter);
