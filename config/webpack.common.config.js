@@ -4,8 +4,7 @@ const path = require('path');
 module.exports = {
     // 属性定义了入口文件路径，
     entry: {
-        // app:'./src/app.js',
-        index: './src/index.js',
+        index: './src/index.jsx',
     },
     // 定义了编译打包之后的文件名以及所在路径
     // 打包输出的文件名字为 bundle.js ，bundle.js  文件存放的路径为 dist/js/bundle.js
@@ -24,6 +23,10 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
+                include: [
+                    /(node_modules\/antd)/,
+                    /grant.js/
+                ],
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
