@@ -1,28 +1,26 @@
-// let root =document.getElementById('root')
-// root.innerHTML='my-project(webpack+react)!!!!!!!!'
 
 import React, { Component } from 'react';
-import './assets/less/app.less';
-// import BJImage from '@/assets/images/R-C.jpg'
-import './App.css';
-import ListTable from './pages/list_table/index.jsx'
 
-class App extends Component {
-  componentDidMount(){
-    // let element = document.getElementById('box2');
-    // let myImage = new Image();
-    // myImage.src = BJImage;
-    // element.appendChild(myImage)
-    // console.log('1111111111111111111111');
-  }
+import Home from '../src/pages/home/index'
+import About from '../src/pages/about/index'
+import Contact from '../src/pages/contact/index'
+import NavBar from '../src/components/NavBar/index'
+import NotFound from '../src/pages/notFound/not_found'
 
-  render() {
-    return (
-      <div className='box'>
-       <ListTable/>
-      </div>
-    );
-  }
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
