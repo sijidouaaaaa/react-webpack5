@@ -1,8 +1,9 @@
-//加载依赖
+//注册路由 需要添加组件
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Routes, Route, } from 'react-router';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
+// import { BrowserRouter  as Router } from 'react-router-dom'
 
 // antd 5.x使用 国际化 
 import zh_CN from 'antd/locale/zh_CN';
@@ -17,7 +18,14 @@ import { routeConfig } from './route_init.js';
 import { modalUpdate } from './actions/modal.js';
 
 import Layout from './pages/layout.jsx'; //框架
-import NotFound from './pages/not_found.jsx'; //404
+import NotFound from './pages/notFound/not_found.jsx'; //404
+import Demo from './pages/demo/index.jsx'; //快捷页面
+import ListTable from './pages/list_table/index.jsx'; //关于列表页面
+import About from './pages/about/index.jsx'; //关于列表页面
+import Contact from './pages/contact/index.jsx'; //关联列表页面
+import ListTableDeatli from './pages/list_table/detail.jsx'; //关联列表页面
+
+
 
 /**
  * 框架模型
@@ -67,7 +75,7 @@ function getRouteView(route, childRender) {
     // 获取参数信息，判断是否符合自定义compent
     const hasCompent = !route.render;
     if (hasCompent) {
-        return (<Route key={route.key} path={route.location} element={route.element}>
+        return (<Route key={route.key} path={route.location} element={<route.keyName />} >
             {
                 hasNext ? childRender(route.children) : ''
             }
@@ -80,17 +88,9 @@ function getRouteView(route, childRender) {
     }
     return (<Route
         key={route.key}
-        element={element}
+        element={<route.keyName />}
         path={route.location}
-        getIndexRoute={(_state, callback) => {
-            loadPage();
-            route.render((p) => {
-                loadPage(true);
-                callback(null, {
-                    element: p.default
-                });
-            });
-        }}>
+    >
         {
             hasNext ? childRender(route.children) : ''
         }
@@ -98,6 +98,7 @@ function getRouteView(route, childRender) {
 }
 
 export default (
+
     <ConfigProvider
         locale={zh_CN}
         componentSize='small' // antd 5.x使用
@@ -105,31 +106,30 @@ export default (
         {/* {<StyleProvider  hashPriority="high"  transformers={[legacyLogicalPropertiesTransformer]}>
         </StyleProvider>} */}
         <Provider store={store}>
-            <BrowserRouter>
+            <Layout>
+                <Router >
                     <Routes>
-                        <Route path="client" element={Layout}>
-                            <Route element={NotFound} />
-                            {
+                        <Route index path="/client/demo" element={<Demo />}>
+                        </Route>
+                        <Route path="*" element={<NotFound />} />
+                        {/* <Route path="client/demo" element={<Demo />} /> */}
+
+                            {/* {
                                 Object.keys(routeConfig.client).map((r) => {
                                     const _rt = routeConfig.client[r];
                                     _rt.location = r;
                                     return getRouteRender(routeConfig.client[r]);
                                 })
-                            }
-                            <Route path="demo" getIndexRoute={(_state, callback) => {
-                                loadPage();
-                                require.ensure([], function (require) {
-                                    let loadComponent = require('./pages/demo/index.jsx');
-                                    loadPage(true);
-                                    callback(null, {
-                                        element: loadComponent.default
-                                    });
-                                }, 'test-index');
-                            }} />
-                            <Route path="*" element={NotFound} />
-                        </Route>
-                    </Routes>
-            </BrowserRouter>
+                            }  */}
+                        <Route path="client/list_table" element={<ListTable/>} />
+                        <Route path="client/about" element={<About />} />
+                        <Route path="client/contact" element={<Contact />} />
+                        <Route path="client/list_table/detail" element={<ListTableDeatli />} />
+                        </Routes>
+                </Router>
+            </Layout>
+
         </Provider>
     </ConfigProvider>
+
 );
