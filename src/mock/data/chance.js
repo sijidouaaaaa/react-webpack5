@@ -1,0 +1,1773 @@
+export const chanceTypeGroupList = [{
+    "groupId": 1,
+    "groupName": "商标业务",
+    "status": 1,
+}, {
+    "groupId": 2,
+    "groupName": "案件业务",
+    "status": 1,
+}, {
+    "groupId": 5,
+    "groupName": "交易业务",
+    "status": 1,
+}];
+
+export const chanceTypeList =  [{
+    "chanceType": 0,
+    "chanceTypeName": "其他商品",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040009,
+    "chanceTypeName": "商标交易管家",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 1,
+    "chanceTypeName": "商标注册(Test)",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040008,
+    "chanceTypeName": "知产通",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 2,
+    "chanceTypeName": "重庆版权登记（传统）",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 514,
+    "chanceTypeName": "查找近似商标",
+    "chanceGroup": 24,
+    "chanceGroupName": "在线营销派单",
+    "isEnable": 1
+}, {
+    "chanceType": 3,
+    "chanceTypeName": "商标/版权",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 4,
+    "chanceTypeName": "订单",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040013,
+    "chanceTypeName": "政策管家（创业板）",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 5,
+    "chanceTypeName": "商标变更",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 6,
+    "chanceTypeName": "商标续展",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 7,
+    "chanceTypeName": "商标转让",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 519,
+    "chanceTypeName": "国内外观专利申诉",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040014,
+    "chanceTypeName": "ISO单体系认证",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 8,
+    "chanceTypeName": "商标许可备案",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040001,
+    "chanceTypeName": "国际专利申请",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9,
+    "chanceTypeName": "商标证补证",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 10,
+    "chanceTypeName": "变转续补证",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 11,
+    "chanceTypeName": "商标注销",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 12,
+    "chanceTypeName": "商标驳回复审",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 13,
+    "chanceTypeName": "商标异议申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040004,
+    "chanceTypeName": "知识产权托管",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 14,
+    "chanceTypeName": "商标撤三申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040007,
+    "chanceTypeName": "政策管家",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 15,
+    "chanceTypeName": "商标无效宣告申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040006,
+    "chanceTypeName": "政策管家（与线上同步）",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 16,
+    "chanceTypeName": "商标异议答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 17,
+    "chanceTypeName": "商标异议复审申请",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 18,
+    "chanceTypeName": "商标异议复审答辩",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040027,
+    "chanceTypeName": "商标购买-阿里",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 19,
+    "chanceTypeName": "商标撤三答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040026,
+    "chanceTypeName": "工程技术中心项目认定",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 20,
+    "chanceTypeName": "商标撤三复审申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 21,
+    "chanceTypeName": "商标撤三复审答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 22,
+    "chanceTypeName": "商标无效宣告答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 23,
+    "chanceTypeName": "月卡",
+    "chanceGroup": 3,
+    "chanceGroupName": "法律业务",
+    "isEnable": 1
+}, {
+    "chanceType": 24,
+    "chanceTypeName": "年卡",
+    "chanceGroup": 3,
+    "chanceGroupName": "法律业务",
+    "isEnable": 1
+}, {
+    "chanceType": 25,
+    "chanceTypeName": "其它",
+    "chanceGroup": 3,
+    "chanceGroupName": "法律业务",
+    "isEnable": 1
+}, {
+    "chanceType": 26,
+    "chanceTypeName": "软件著作权登记（传统）",
+    "chanceGroup": 14,
+    "chanceGroupName": "数字版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 27,
+    "chanceTypeName": "商标宽展",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 28,
+    "chanceTypeName": "商标更正",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040021,
+    "chanceTypeName": "在线公证",
+    "chanceGroup": 30,
+    "chanceGroupName": "交易服务",
+    "isEnable": 1
+}, {
+    "chanceType": 29,
+    "chanceTypeName": "版权变更（传统）",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9040020,
+    "chanceTypeName": "政策咨询",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 30,
+    "chanceTypeName": "版权转让（传统）",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 31,
+    "chanceTypeName": "版权补证（传统）",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 32,
+    "chanceTypeName": "法律三件套",
+    "chanceGroup": 3,
+    "chanceGroupName": "法律业务",
+    "isEnable": 1
+}, {
+    "chanceType": 33,
+    "chanceTypeName": "会计提交的代帐机会",
+    "chanceGroup": 4,
+    "chanceGroupName": "代账业务",
+    "isEnable": 1
+}, {
+    "chanceType": 34,
+    "chanceTypeName": "客户提交的请求代帐机会",
+    "chanceGroup": 4,
+    "chanceGroupName": "代账业务",
+    "isEnable": 1
+}, {
+    "chanceType": 35,
+    "chanceTypeName": "交易区商标交易",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 36,
+    "chanceTypeName": "版权购买",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 37,
+    "chanceTypeName": "软件著作权购买",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 38,
+    "chanceTypeName": "交易区求购客户抓取",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9079980,
+    "chanceTypeName": "菜菜通用模版",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 39,
+    "chanceTypeName": "一元商标问诊服务",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 40,
+    "chanceTypeName": "一元版权问诊服务",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 41,
+    "chanceTypeName": "一元法律问诊服务",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9060003,
+    "chanceTypeName": "知产管家专利版（消化）",
+    "chanceGroup": 18,
+    "chanceGroupName": "复购派单",
+    "isEnable": 1
+}, {
+    "chanceType": 42,
+    "chanceTypeName": "一元案件纠纷问诊服务",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 43,
+    "chanceTypeName": "商标出售",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 44,
+    "chanceTypeName": "商标购买",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 45,
+    "chanceTypeName": "案件咨询服务",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 46,
+    "chanceTypeName": "专利申请",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9380001,
+    "chanceTypeName": "大客户业务",
+    "chanceGroup": 38,
+    "chanceGroupName": "大客户业务",
+    "isEnable": 1
+}, {
+    "chanceType": 47,
+    "chanceTypeName": "商标加设计套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 48,
+    "chanceTypeName": "设计",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 49,
+    "chanceTypeName": "国际商标注册",
+    "chanceGroup": 8,
+    "chanceGroupName": "国际商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 50,
+    "chanceTypeName": "国家版权登记",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 51,
+    "chanceTypeName": "VIP服务",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 52,
+    "chanceTypeName": "八戒移动服务",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 53,
+    "chanceTypeName": "商业秘密设计",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 54,
+    "chanceTypeName": "技术秘密设计",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 55,
+    "chanceTypeName": "高企申请",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 56,
+    "chanceTypeName": "高新技术产品认证",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 57,
+    "chanceTypeName": "发明专利",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 12345,
+    "chanceTypeName": "加班狗的愤怒（test）",
+    "chanceGroup": 81,
+    "chanceGroupName": null,
+    "isEnable": 1
+}, {
+    "chanceType": 58,
+    "chanceTypeName": "实用新型",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 60,
+    "chanceTypeName": "外观专利",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 61,
+    "chanceTypeName": "VIP其他服务",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 62,
+    "chanceTypeName": "科技项目管理",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 63,
+    "chanceTypeName": "商标担保注册+八戒移动应用套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 64,
+    "chanceTypeName": "城市服务站",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 65,
+    "chanceTypeName": "商标取名",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 66,
+    "chanceTypeName": "版权出售",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 67,
+    "chanceTypeName": "软件著作权出售",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 68,
+    "chanceTypeName": "专利购买",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 69,
+    "chanceTypeName": "专利出售",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 70,
+    "chanceTypeName": "高企变更",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 71,
+    "chanceTypeName": "高企年报",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 72,
+    "chanceTypeName": "专利咨询",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 74,
+    "chanceTypeName": "资金扶持申请",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 75,
+    "chanceTypeName": "产业规划",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9080001,
+    "chanceTypeName": "知产服务咨询",
+    "chanceGroup": 28,
+    "chanceGroupName": "知产服务云业务",
+    "isEnable": 1
+}, {
+    "chanceType": 76,
+    "chanceTypeName": "科技评估",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 77,
+    "chanceTypeName": "软企备案",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 78,
+    "chanceTypeName": "高企认定培育",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 79,
+    "chanceTypeName": "资金扶持培育",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 80,
+    "chanceTypeName": "APP微信开发",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 81,
+    "chanceTypeName": "知产众筹",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 82,
+    "chanceTypeName": "独家运营中心",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 83,
+    "chanceTypeName": "印刷服务",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 84,
+    "chanceTypeName": "LOGO设计",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 85,
+    "chanceTypeName": "VI设计",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 86,
+    "chanceTypeName": "宣传品设计",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 87,
+    "chanceTypeName": "包装设计",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 1111,
+    "chanceTypeName": "离职吧小伙子",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 88,
+    "chanceTypeName": "电商网店装修",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 89,
+    "chanceTypeName": "百度百科",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90,
+    "chanceTypeName": "企业百度百科",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 91,
+    "chanceTypeName": "让品牌飞",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 92,
+    "chanceTypeName": "让品牌牛",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 93,
+    "chanceTypeName": "让品牌火",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 94,
+    "chanceTypeName": "会员销售",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 95,
+    "chanceTypeName": "涉外知识产权",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 96,
+    "chanceTypeName": "专利著录项目变更",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 8801,
+    "chanceTypeName": "88节商标送100元的优惠券",
+    "chanceGroup": 32,
+    "chanceGroupName": null,
+    "isEnable": 1
+}, {
+    "chanceType": 60001,
+    "chanceTypeName": "lyh测试机会类型名称1",
+    "chanceGroup": 34,
+    "chanceGroupName": "34de",
+    "isEnable": 1
+}, {
+    "chanceType": 98,
+    "chanceTypeName": "形象提升",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 60002,
+    "chanceTypeName": "lyh测试机会类型名称123",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 99,
+    "chanceTypeName": "互联网+套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 100,
+    "chanceTypeName": "服装套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 101,
+    "chanceTypeName": "食品套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 999999999,
+    "chanceTypeName": "franny-test-all",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 102,
+    "chanceTypeName": "域名服务",
+    "chanceGroup": 10,
+    "chanceGroupName": "创新业务",
+    "isEnable": 1
+}, {
+    "chanceType": 103,
+    "chanceTypeName": "专利撰写",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9100002,
+    "chanceTypeName": "代币购买",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90400011,
+    "chanceTypeName": "线上转线下（分润）",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 105,
+    "chanceTypeName": "专利修改",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90400010,
+    "chanceTypeName": "线上转线下",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 106,
+    "chanceTypeName": "审查意见答复",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 107,
+    "chanceTypeName": "数字版权登记",
+    "chanceGroup": 14,
+    "chanceGroupName": "数字版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90400008,
+    "chanceTypeName": "知产管家（通用版）",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 108,
+    "chanceTypeName": "评价报告更正（实新/外观）",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 109,
+    "chanceTypeName": "发明专利公众意见",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 111,
+    "chanceTypeName": "专利复审",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 113,
+    "chanceTypeName": "专利官方检索",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 116,
+    "chanceTypeName": "专利流程服务",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 117,
+    "chanceTypeName": "专利无效请求",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 122,
+    "chanceTypeName": "专利无效答辩",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 123,
+    "chanceTypeName": "贯标服务",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 124,
+    "chanceTypeName": "商标撤回",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 125,
+    "chanceTypeName": "专利延伸",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 126,
+    "chanceTypeName": "加急商标取名",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90400028,
+    "chanceTypeName": "好多知产管家",
+    "chanceGroup": 32,
+    "chanceGroupName": null,
+    "isEnable": 1
+}, {
+    "chanceType": 129,
+    "chanceTypeName": "质权登记",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070091,
+    "chanceTypeName": "业务支持",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 130,
+    "chanceTypeName": "质权变更",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 131,
+    "chanceTypeName": "质权延期",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 132,
+    "chanceTypeName": "质权补证",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 133,
+    "chanceTypeName": "质权注销",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 134,
+    "chanceTypeName": "海关备案",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 135,
+    "chanceTypeName": "海关备案变更",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 136,
+    "chanceTypeName": "海关备案注销",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 137,
+    "chanceTypeName": "海关备案续展",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 138,
+    "chanceTypeName": "个体注册",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 139,
+    "chanceTypeName": "企业注册",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 140,
+    "chanceTypeName": "刻章",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 141,
+    "chanceTypeName": "地址",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 143,
+    "chanceTypeName": "划扣驳回复审",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 144,
+    "chanceTypeName": "商标注册（划扣）",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 145,
+    "chanceTypeName": "行政诉讼",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070107,
+    "chanceTypeName": "郑州云项目",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 146,
+    "chanceTypeName": "不予注册复审答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070104,
+    "chanceTypeName": "淘服务教育",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 147,
+    "chanceTypeName": "同日补证",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070105,
+    "chanceTypeName": "淘服务商标",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 148,
+    "chanceTypeName": "同日协商提交",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 149,
+    "chanceTypeName": "案件撤回申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070111,
+    "chanceTypeName": "服务商城实物",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 150,
+    "chanceTypeName": "商标质证",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070108,
+    "chanceTypeName": "IPR郑州云项目",
+    "chanceGroup": 31,
+    "chanceGroupName": "郑州云",
+    "isEnable": 1
+}, {
+    "chanceType": 9130003,
+    "chanceTypeName": "专利优惠券",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 153,
+    "chanceTypeName": "商标侵权监测",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9130002,
+    "chanceTypeName": "域名购买",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 154,
+    "chanceTypeName": "八戒合伙人-普通版",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 666,
+    "chanceTypeName": "杨惠迪",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9130001,
+    "chanceTypeName": "店铺购买",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 155,
+    "chanceTypeName": "八戒合伙人-高级版",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 156,
+    "chanceTypeName": "八戒合伙人-门店",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070102,
+    "chanceTypeName": "淘服务资质",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9130007,
+    "chanceTypeName": "版权交易",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 157,
+    "chanceTypeName": "八戒合伙人-物料",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070103,
+    "chanceTypeName": "淘服务专利",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9130006,
+    "chanceTypeName": "店铺入驻",
+    "chanceGroup": 30,
+    "chanceGroupName": "交易服务",
+    "isEnable": 1
+}, {
+    "chanceType": 158,
+    "chanceTypeName": "数字版权增值服务",
+    "chanceGroup": 14,
+    "chanceGroupName": "数字版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 159,
+    "chanceTypeName": "双担保（商标担保注册）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070101,
+    "chanceTypeName": "西藏专项",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 160,
+    "chanceTypeName": "百度百科（企业名片）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 161,
+    "chanceTypeName": "商标认定",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 162,
+    "chanceTypeName": "取名套餐(免费版)",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 163,
+    "chanceTypeName": "双享注册+设计",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 164,
+    "chanceTypeName": "行业产品套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 165,
+    "chanceTypeName": "路标会员(初创版)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 166,
+    "chanceTypeName": "路标会员(畅享版)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 167,
+    "chanceTypeName": "路标会员(尊享版)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 168,
+    "chanceTypeName": "商标监测服务(体验档)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 169,
+    "chanceTypeName": "商标监测服务(基础档)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070115,
+    "chanceTypeName": "思博严选服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 170,
+    "chanceTypeName": "商标监测服务(进阶档)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 171,
+    "chanceTypeName": "商标监测服务(尊享档)",
+    "chanceGroup": 16,
+    "chanceGroupName": "路标网业务",
+    "isEnable": 1
+}, {
+    "chanceType": 172,
+    "chanceTypeName": "商标异议维权套餐",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070118,
+    "chanceTypeName": "商标交易服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 173,
+    "chanceTypeName": "异议答辩维权套餐",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 174,
+    "chanceTypeName": "急用商标套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070116,
+    "chanceTypeName": "思博学院",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 175,
+    "chanceTypeName": "商标注册+现成商标套餐",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9130020,
+    "chanceTypeName": "交易增值服务",
+    "chanceGroup": 30,
+    "chanceGroupName": "交易服务",
+    "isEnable": 1
+}, {
+    "chanceType": 176,
+    "chanceTypeName": "在线公证-内部",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 177,
+    "chanceTypeName": "电商申诉维权",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 178,
+    "chanceTypeName": "规模化企业",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 179,
+    "chanceTypeName": "软件著作权",
+    "chanceGroup": 14,
+    "chanceGroupName": "数字版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 182,
+    "chanceTypeName": "游戏版号办理",
+    "chanceGroup": 14,
+    "chanceGroupName": "数字版权业务",
+    "isEnable": 1
+}, {
+    "chanceType": 183,
+    "chanceTypeName": "担保商标收购",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 184,
+    "chanceTypeName": "商标包找到",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 8888,
+    "chanceTypeName": "企业管家-测试配置",
+    "chanceGroup": 32,
+    "chanceGroupName": null,
+    "isEnable": 1
+}, {
+    "chanceType": 185,
+    "chanceTypeName": "品牌托管",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 186,
+    "chanceTypeName": "商标注册（双享驳回）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 187,
+    "chanceTypeName": "品牌百度百科",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 188,
+    "chanceTypeName": "商标文书代领",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 189,
+    "chanceTypeName": "商标担保变现",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 190,
+    "chanceTypeName": "商标担保回购",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 8888888,
+    "chanceTypeName": "franny-test-one",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 194,
+    "chanceTypeName": "疑难套餐",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 195,
+    "chanceTypeName": "商标优先权",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 196,
+    "chanceTypeName": "商标注册(赠送)",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 197,
+    "chanceTypeName": "商标维权",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 45253,
+    "chanceTypeName": "测试机会创建1",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 198,
+    "chanceTypeName": "商标注册（疑难）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 199,
+    "chanceTypeName": "自主申报",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 200,
+    "chanceTypeName": "案件新增",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 201,
+    "chanceTypeName": "201机会类型1",
+    "chanceGroup": 32,
+    "chanceGroupName": null,
+    "isEnable": 1
+}, {
+    "chanceType": 202,
+    "chanceTypeName": "知产新推官加盟费",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 90500011,
+    "chanceTypeName": "商标注册-开放平台",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9079901,
+    "chanceTypeName": "专利通用模板机会类型(外)",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 222,
+    "chanceTypeName": "lyh机会类型名称2",
+    "chanceGroup": 34,
+    "chanceGroupName": "34de",
+    "isEnable": 1
+}, {
+    "chanceType": 9020001,
+    "chanceTypeName": "八戒知产管家-专利版",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070182,
+    "chanceTypeName": "商机网入驻",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 1000161,
+    "chanceTypeName": "内推共享新推官",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 1000160,
+    "chanceTypeName": "知产新推官",
+    "chanceGroup": 11,
+    "chanceGroupName": "渠道运营费业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070181,
+    "chanceTypeName": "商机网入驻",
+    "chanceGroup": 12,
+    "chanceGroupName": "其他业务",
+    "isEnable": 1
+}, {
+    "chanceType": 123123,
+    "chanceTypeName": "111",
+    "chanceGroup": 24,
+    "chanceGroupName": "在线营销派单",
+    "isEnable": 1
+}, {
+    "chanceType": 778,
+    "chanceTypeName": "国际商标购买",
+    "chanceGroup": 5,
+    "chanceGroupName": "交易业务",
+    "isEnable": 1
+}, {
+    "chanceType": 3060000,
+    "chanceTypeName": "中间业务申报",
+    "chanceGroup": 7,
+    "chanceGroupName": "专利业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050002,
+    "chanceTypeName": "企业管家B-开放平台",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050003,
+    "chanceTypeName": "国际商标",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050001,
+    "chanceTypeName": "企业管家A-开放平台",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050006,
+    "chanceTypeName": "底价模式",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050007,
+    "chanceTypeName": "版权自助登记",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9050005,
+    "chanceTypeName": "国际商标注册-代理商",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070010,
+    "chanceTypeName": "服务平台雇主商机",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070011,
+    "chanceTypeName": "服务平台招商商机",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070008,
+    "chanceTypeName": "知产贯标服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070009,
+    "chanceTypeName": "审计分包（消化）",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070014,
+    "chanceTypeName": "政策管家服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070012,
+    "chanceTypeName": "双软认证撰写",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070013,
+    "chanceTypeName": "高新技术企业认定撰写",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070003,
+    "chanceTypeName": "专利咨询服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070001,
+    "chanceTypeName": "专利服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070006,
+    "chanceTypeName": "诉讼服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070007,
+    "chanceTypeName": "案件撰写服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070005,
+    "chanceTypeName": "软著服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9076661,
+    "chanceTypeName": "思博学院专利服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070018,
+    "chanceTypeName": "清远业务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070019,
+    "chanceTypeName": "区域定制产品服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070022,
+    "chanceTypeName": "共享服务类型",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 333,
+    "chanceTypeName": "商标注册（测试）",
+    "chanceGroup": 34,
+    "chanceGroupName": "34de",
+    "isEnable": 1
+}, {
+    "chanceType": 9070021,
+    "chanceTypeName": "项目服务",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 4445,
+    "chanceTypeName": "商标注册哈",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9900003,
+    "chanceTypeName": "知产高新技术企业认定",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9900002,
+    "chanceTypeName": "知产城市项目单品",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9900001,
+    "chanceTypeName": "双软认证",
+    "chanceGroup": 15,
+    "chanceGroupName": "综合服务业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9120002,
+    "chanceTypeName": "vip购买",
+    "chanceGroup": 9,
+    "chanceGroupName": "vip业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9120001,
+    "chanceTypeName": "测试机会类型",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9011001,
+    "chanceTypeName": "知猪卡",
+    "chanceGroup": 35,
+    "chanceGroupName": "35的",
+    "isEnable": 1
+}, {
+    "chanceType": 9011003,
+    "chanceTypeName": "专利购买-线下",
+    "chanceGroup": 25,
+    "chanceGroupName": "交易平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9070901,
+    "chanceTypeName": "专利通用模板机会类型(内)",
+    "chanceGroup": 22,
+    "chanceGroupName": "知产服务平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010009,
+    "chanceTypeName": "八戒知产管家-商标版",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010011,
+    "chanceTypeName": "设计+注册商标",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010015,
+    "chanceTypeName": "知识产权诉讼",
+    "chanceGroup": 26,
+    "chanceGroupName": "诉讼业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010001,
+    "chanceTypeName": "分割申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010003,
+    "chanceTypeName": "担保撤三套餐（注册）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010002,
+    "chanceTypeName": "划扣异议答辩",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010005,
+    "chanceTypeName": "不予注册复审申请",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010004,
+    "chanceTypeName": "担保撤三套餐（案件）",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010007,
+    "chanceTypeName": "商标广告位",
+    "chanceGroup": 30,
+    "chanceGroupName": "交易服务",
+    "isEnable": 1
+}, {
+    "chanceType": 1001,
+    "chanceTypeName": "TEST_1001",
+    "chanceGroup": 34,
+    "chanceGroupName": "34de",
+    "isEnable": 1
+}, {
+    "chanceType": 9010016,
+    "chanceTypeName": "商标注册（尊享驳回）",
+    "chanceGroup": 1,
+    "chanceGroupName": "商标业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010040,
+    "chanceTypeName": "测试机会类型-9010040",
+    "chanceGroup": 28,
+    "chanceGroupName": "知产服务云业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010042,
+    "chanceTypeName": "商标普通复审（数据外呼）",
+    "chanceGroup": 2,
+    "chanceGroupName": "案件业务",
+    "isEnable": 1
+}, {
+    "chanceType": 500,
+    "chanceTypeName": "业务线1下的机会类型名称1",
+    "chanceGroup": 34,
+    "chanceGroupName": "34de",
+    "isEnable": 1
+}, {
+    "chanceType": 9030001,
+    "chanceTypeName": "版权开放平台",
+    "chanceGroup": 19,
+    "chanceGroupName": "开放平台业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9010035,
+    "chanceTypeName": "常年法律顾问",
+    "chanceGroup": 26,
+    "chanceGroupName": "诉讼业务",
+    "isEnable": 1
+}, {
+    "chanceType": 9030003,
+    "chanceTypeName": "八戒知产管家-原创版",
+    "chanceGroup": 6,
+    "chanceGroupName": "版权业务",
+    "isEnable": 1
+}];
